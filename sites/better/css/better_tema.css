@@ -1,0 +1,38 @@
+.jumbotron {
+	background-image: url("../imagens/capa3.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+.social a[href="http://instagram.com/better"] {
+	background: url("../imagens/insta.png");
+	background-size: 36px 36px;
+}
+
+.social a[href="http://facebook.com/better"] {
+	background: url("../imagens/face.png");
+	background-size: 36px 36px;
+}
+
+.social a[href="http://twitter.com/better"] {
+	background: url("../imagens/tt.png");
+	background-size: 36px 36px;
+}
+
+.social a[href="http://youtube.com/better"] {
+	background: url("../imagens/youtube.png");
+	background-size: 36px 36px;
+}
+
+.social a {
+	display: block;
+	width: 36px;
+	height: 36px;
+	text-indent: -9999px;
+}
+
+.social li {
+	display: inline-block;
+	margin-left: 1em;
+}

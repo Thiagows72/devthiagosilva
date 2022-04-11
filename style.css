@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #1e1e2a;
+}
+
+/* HEADER */
+
+.header-container {
+    height: 100vh;
+    width: 100%;
+    background-color: #f47158;
+    background-image: url(img/thiago3-sf.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header-textos {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #1e1e2a;
+    padding: 1rem 4rem;
+    border: 1px solid #1e1e2a;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+a:hover {
+    background-color: #ffffff;
+}
+
+/* MENU HAMBURGUER */
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+
+.checkbox .trace {
+    width: 50px;
+    height: 2px;
+    background-color: #1e1e2a;
+    position: absolute;
+    border-radius: 4px;
+    transition: .5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1) {
+    top: 26px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2) {
+    top: 46px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3) {
+    top: 66px;
+    transform: rotate(0);
+}
+
+#toggle {
+    display: none;
+}
+
+/* MENU */
+
+.menu {
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    background-color: transparent;
+    height: 4px;
+    width: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px #ffffff;
+    z-index: -1;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-itens {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-itens ul {
+    list-style-type: none;
+}
+.menu-itens ul li a {
+    margin: 10px 0;
+    color: #1e1e2a;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+/* ANIMAÇÃO DO MENU */
+
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    top: 47px;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform: translate(-200px);
+    top: 47px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 48px;
+}
+
+#toggle:checked + .checkbox {
+    background-color: #ffffff;
+}
+
+#toggle:checked ~ .menu {
+    box-shadow: 0px 0px 0px 100vmax #ffffff;
+    z-index: 1;
+}
+
+#toggle:checked ~ .menu-itens {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: #f47158;
+    position: relative;
+    top: 0;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    
+}
+
+.nav a {
+    text-decoration: none;
+    color: #1e1e2a;
+    align-items: flex-end;
+    margin-right: 40px;
+}
+
+.nav a:hover {
+    background-color: transparent;
+}
+
+/* CARDS */
+
+
+.container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f47158;
+    background-image: url(img/thiago-sf.png);    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(.5);
+    color: #1e1e2a;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.finans {
+    background-image: url(img/finans.png);
+}
+
+.spotify {
+    background-image: url(img/spotify.png);
+}
+
+.better {
+    background-image: url(img/better.png);
+}
+
+.card-text {
+    width: 60%;
+    letter-spacing: 1px;
+    color: rgb(109, 109, 109);
+}
+
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;    
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.card-wrapper h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: .5s ease-in-out;
+    color: #f47158;
+    border-radius: 25px;
+    padding: 5px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.card-wrapper p {
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s ease-in-out;
+}
+
+.card:hover {
+    filter: unset;
+}
+
+.card:hover > .card-wrapper::before {
+    height: 250px;
+    width: 250px;
+    opacity: 1;
+}
+
+.card:hover > .card-wrapper p {
+    opacity: 1;
+    visibility: visible;
+    font-size: 20px;
+    color: #f47158;
+    background-color: #ffffff;
+    border: 1px solid #f47158;
+    border-radius: 5px;
+    padding: 8px 48px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #f47158;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e1e2a;
+}
+
+.links-projetos {
+    text-decoration: none;
+}
+
+/* ------------------------------------------- 768px ------------------------------------------- */
+
+@media screen and (max-width: 768px) { 
+    .card {
+        width: 200px;
+        height: 200px;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .card:hover > .card-wrapper p {        
+        padding: 4px 20px;
+    }
+
+}/* ------------------------------------------- 768px ------------------------------------------- */
+
+/* ------------------------------------------- 469px ------------------------------------------- */
+
+@media screen and (max-width: 469px) { 
+    .card {
+        display: visible;
+    }
+
+    .social-media a {        
+        padding: 20px;        
+    }
+
+    .card:hover > .card-wrapper p {        
+        padding: 2px 10px;
+    }
+
+    .card {
+        width: 75px;
+        height: 75px;        
+    }
+
+    .card .card-wrapper {
+        display: none;
+    }
+
+    .card-text {
+        width: 50%;
+        letter-spacing: 0.8px;
+        
+    }
+
+}/* ------------------------------------------- 469px ------------------------------------------- */
+
+
+
+

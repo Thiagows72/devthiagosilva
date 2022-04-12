@@ -40,8 +40,11 @@ fclose($arquivo);
 
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>App Help Desk</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consulta de chamados</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -56,16 +59,13 @@ fclose($arquivo);
 
   <body>
 
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark" style="flex-flow: nowrap;">
       <a class="navbar-brand" href="#">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
-      </a>
-      <ul class="nav-bar">
-        <li class="nav-item">
-          <a href="logoff.php" class="nav-link" >Sair</a>
-        </li>
-      </ul>
+      </a>      
+      <a href="logoff.php" class="btn btn-sm btn-info" >Sair</a>
+        
     </nav>
 
     <div class="container">    

@@ -265,6 +265,10 @@ a:hover {
     background-image: url(img/better.png);
 }
 
+.appHelpDesk {
+    background-image: url(img/apphelpdesk.png);
+}
+
 .card-text {
     width: 60%;
     letter-spacing: 1px;
@@ -384,16 +388,11 @@ footer {
     }
 
     .card {
-        width: 75px;
-        height: 75px;        
-    }
-
-    .card .card-wrapper {
         display: none;
     }
 
     .card-text {
-        width: 50%;
+        width: 90%;
         letter-spacing: 0.8px;
         
     }

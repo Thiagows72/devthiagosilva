@@ -13,7 +13,7 @@ echo $email;
 $dados_chamado = $_SESSION['id'] . ';' . $titulo . ';' . $categoria . ';' . $descrição . ';' . $email . PHP_EOL;
 
 //abre o arquivo
-$arquivo = fopen('../../App_help_desk/arquivo.hd', 'a');
+$arquivo = fopen('../../../../appHelpDesk/arquivo.hd', 'a');
 
 //escreve no arquivo // PHP_EOL faz a quebra de linha 
 fwrite($arquivo, $dados_chamado);

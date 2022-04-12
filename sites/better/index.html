@@ -2,22 +2,32 @@
 <html lang="pt-br">
   <head>
 
-        <title>Better</title>
+    <title>Better</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="css/better_tema.css">
-    
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+
+    <script>
+      $(document).ready( function () {
+        $('.main-images a').click( function (e) {
+          e.preventDefault()
+          $(this).toggleClass('maxSize')        
+        })
+      })
+    </script>    
 
   </head>
 
   <body>
-
     
       <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <div class="container"> <!-- Início container-->
@@ -49,9 +59,9 @@
       <main>
         <section class="jumbotron"> <!-- Início jumbotron -->
           <div class="container">
-          <h1 class="display-4">Momentos perfeitos</h1>
-          <p class="">Texto aleatório texto.</p>
-          <form class="input-group">
+          <h1 class="display-4 pt-5">Momentos perfeitos</h1>
+          <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <form class="input-group pb-5">
             <input type="search" class="form-control" placeholder="Procure o que você precisa bem aqui!">
             <span class="input-group-btn">
               <button class="btn btn-warning">Pesquisar</button>
@@ -61,77 +71,77 @@
         </section><!-- Fim jumbotron-->
 
       <section class="container"> <!-- Galeria de fotos com grid do bootstrap -->
-          <h3 class="text-center">Imagens lindas, marcantes e intensas.</h2>
-          <p class="text-center">Texto aleatório texto aleatório.</p>
+          <h3 class="text-center mt-5">Imagens lindas, marcantes e intensas.</h2>
+          <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam.</p>
 
-          <div class="row">
-            <a href="" class="col-sm-6 col-md-4 col-lg-3">
+          <div class="row main-images">
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
               <figure>
                 <img class="img fluid img-thumbnail" src="imagens/img1.jpg" alt="Boneco de natal">
-                <figcaption>
+                <figcaption class="text-center">
                   Boneco natalino
                 </figcaption>
               </figure>
             </a>
 
-            <a href="" class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
               <figure>
                 <img class="img fluid img-thumbnail" src="imagens/img2.jpg" alt="Vela Natal">
-                <figcaption>
+                <figcaption class="text-center">
                   Vela natalina
                 </figcaption>
               </figure>
             </a>
 
-            <a href="" class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
               <figure>
                 <img class="img fluid img-thumbnail" src="imagens/img3.jpg" alt="Cão">
-                <figcaption>
+                <figcaption class="text-center">
                   Cãozinho
                 </figcaption>
               </figure>
             </a>
 
-            <a href="" class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
               <figure>
                 <img class="img fluid img-thumbnail" src="imagens/img4.jpg" alt="Confraternização">
-                <figcaption>
+                <figcaption class="text-center">
                   Confraternização
                 </figcaption>
               </figure>
             </a>
 
-            <a href="" class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
               <figure>
                 <img class="img fluid img-thumbnail" src="imagens/img5.jpg" alt="Pinheiros com neve">
-                <figcaption>
+                <figcaption class="text-center">
                   Pinheiros
                 </figcaption>
               </figure>
             </a>
 
-            <a href="" class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
               <figure>
                 <img class="img-fluid img-thumbnail" src="imagens/img6.jpg" alt="Veado">
-                <figcaption>
+                <figcaption class="text-center">
                   Veado
                 </figcaption>
               </figure>
             </a>
 
-            <a href="" class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
               <figure>
                 <img class="img-fluid img-thumbnail" src="imagens/img7.jpg" alt="Gastrnomia">
-                <figcaption>
+                <figcaption class="text-center">
                   Gastronomia belga
                 </figcaption>
               </figure>
             </a>
 
-            <a href="" class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
               <figure>
                 <img class="img-fluid img-thumbnail" src="imagens/img8.jpg" alt="Miami">
-                <figcaption>
+                <figcaption class="text-center">
                   Noite de Miami
                 </figcaption>
               </figure>
@@ -145,7 +155,7 @@
             <div class="col-lg-5">
               <h1>Hall da fama do mês de Novembro</h1>
               <p>Mais baixadas e mais votadas são disponibilizadas todos mês!</p>
-              <button class="btn-lg btn-primary">Quero voltar!</button>
+              <button class="btn-lg btn-primary">Quero votar!</button>
             </div>
             
               <figure class="col-lg-7 mt-4">
@@ -166,49 +176,59 @@
 
         <div class="row"><!-- Início da row reviews-->
           <div class="media col-md-6">
-            <img src="imagens/imgReviews1.jpg" alt="Roberto Ford" class="mr-3">
-
-            <div class="media-body">
+            <div class="d-flex flex-row align-items-center">
+              <img src="imagens/imgReviews1.jpg" alt="Roberto Ford" class="m-3">
               <h2 class="h5">Roberto Ford</h2>
-
-              <p>Texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório.</p>
+            </div>
+            <div class="media-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nihil cum architecto quos enim soluta omnis inventore autem ex, tenetur commodi expedita assumenda, ab sit, sequi voluptatibus dicta tempora aliquam.                
+              </p>
             </div>
           </div>
 
           <div class="media col-md-6">
-            <img src="imagens/imgReviews2.jpg" alt="Thais Alves" class="mr-3">
-
-            <div class="media-body">
+            <div class="d-flex flex-row align-items-center">
+              <img src="imagens/imgReviews2.jpg" alt="Thais Alves" class="m-3">
               <h2 class="h5">Thais Alves</h2>
-
-              <p>Texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório.</p>
+            </div>
+            <div class="media-body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ratione, explicabo modi consequatur mollitia rem enim nam similique ullam ipsum quasi. Reiciendis magni eos quisquam. Officia nihil magni dolorem rem.
+              </p>
             </div>
           </div>
 
           <div class="media col-md-6">
-            <img src="imagens/imgReviews3.jpg" alt="Quesia Thainá" class="mr-3">
-
-            <div class="media-body">
+            <div class="d-flex flex-row align-items-center">
+              <img src="imagens/imgReviews3.jpg" alt="Quesia Thainá" class="m-3">
               <h2 class="h5">Quesia Thainá</h2>
-
-              <p>Texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório.</p>
+            </div>
+            <div class="media-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquid omnis quasi doloribus corporis eaque! Ut magni unde, minima odit ab esse dolorum magnam doloremque tempora odio temporibus enim corrupti?
+              </p>
             </div>
           </div>
 
           <div class="media col-md-6">
-            <img src="imagens/imgReviews4.jpg" alt="Elisama Araujo" class="mr-3">
-
-            <div class="media-body">
+            <div class="d-flex flex-row align-items-center">
+              <img src="imagens/imgReviews4.jpg" alt="Elisama Araujo" class="m-3">
               <h2 class="h5">Elisama Araujo</h2>
-
-              <p>Texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório.</p>
+            </div>
+            <div class="media-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laborum cumque necessitatibus possimus, nobis maxime quam cum iure labore amet sapiente voluptate repudiandae fugiat voluptatum nostrum dolorum quos assumenda tempore.
+              </p>
             </div>
           </div>
+
         </div><!-- Fim da row reviews-->
       </section><!-- Fim da sessão reviews -->
+      <hr>
 
       <section class="planos container mb-5 px-4"><!-- Inicio da sessão Planos -->
-        <h1>Planos para todos os bolsos:</h1>
+        <h1 class="my-5">Planos para todos os bolsos:</h1>
         <div class="row"> <!-- ROW planos -->
           <div class="col-md-4">
           <div class="card text-center mb-2"> <!-- Card plano 1 -->
@@ -275,15 +295,16 @@
       </main>
 
 
+    <!-- Optional JavaScript; choose one of the two! -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">      
-    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">      
-    </script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">      
-    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 
   </body>
 </html>

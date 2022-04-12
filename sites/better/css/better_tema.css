@@ -36,3 +36,24 @@
 	display: inline-block;
 	margin-left: 1em;
 }
+
+.maxSize {
+    width: 60%;
+	height: 60%;
+	transition: .7s;
+}
+
+@media screen and (max-width: 768px) {
+	.maxSize {
+		width: 100%;
+		height: 100%;
+	}
+}	
+
+
+@media screen and (max-width: 576px) {
+	.maxSize {
+		width: 100%;
+		height: 100%;
+	}	
+}

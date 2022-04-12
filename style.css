@@ -371,8 +371,12 @@ footer {
         display: visible;
     }
 
+    .header-textos {
+        margin: 30px;
+    }
+
     .social-media a {        
-        padding: 20px;        
+        padding: 7px 30px;        
     }
 
     .card:hover > .card-wrapper p {        
@@ -395,11 +399,24 @@ footer {
     }
 
     .header-container {
-        background-image: none;
+        background-position: 57%;
     }
 
 }/* ------------------------------------------- 469px ------------------------------------------- */
 
+@media screen and (max-width: 360px) { 
+    .header-textos {
+        margin: 15px;
+    }
+
+    .social-media a {        
+        padding: 5px 10px;        
+    }
+
+    .header-container {
+        background-position: 60%;
+    }  
+}
 
 
 
